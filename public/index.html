@@ -24,7 +24,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-                    <a class="navbar-brand" href="#" style="color:#DD1635">ICR</a>
+                    <img src="images/Icr copy.png" class="img-responsive navbar-brand"  style="width: 200px;height: 90px;"/>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,14 +38,11 @@
         </nav>
         <div class="container" id="contact">
             <div class="jumbotron">
-                <h4 style="color:#C00">Message From the ICR</h4>
-                <p class="justify">Welcome to Illinois Institute of Technology's Public Safety Department website. We hope you will find the information contained here to be useful.</p>
-                <p class="justify">Reporting directly to the Vice President for Facilities and Public Safety, the Public Safety Department supports the university's educational goals by maintaining a secure environment in which to explore diverse social, cultural and academic
-                    ideas and to pursue knowledge. In addition to discharging its specific duties and responsibilities,the Public Safety Department maintains continuous and harmonious relationships with other law enforcement agencies and community leaders
-                    Through a cooperative relationship with local law enforcement, IIT contributes to a community-wide effort to fight criminal activity. The end result is a safe and secure environment in which to live, work and study throughout all IIT
-                    campuses.</p>
-                <p class="justify">Developing a safe and secure environment in an academic institution is a partnership. The Public Safety Department is assigned the primary responsibility of identifying those programs, methods, and tactics necessary; while every member
-                    of the community is encouraged to learn and demonstrate personal security habits and to immediately report crimes or suspicious activity.</p>
+                <h4 style="color:#C00">Message From the Intellectual Credit Repository - ICR</h4>
+                <p class="justify">ICR (Intellectual Credit Repository) In the current scenariomany different Credit Reporting Agencies keep a track of the credit score of the individuals from all over the country. There are three major organizations they are TransUnion, Equifax and Experian. All do the same thing of maintaining the FICO scores along with the credit history of the individuals but they all follow different algorithms for measurement of the scores. Because of this difference many Individuals have different FICO scores in different organizationswhich they might not be aware of. So now whenever they apply for a new loan, it takes a lot of time for the verification and background check of the customer because most of the time the data gathered from any one of the Credit Reporting Agencies does not match with the data from the other Agencies which leads the involved banks for further investigation, hence increasing the time taken in the whole procedure.</p>
+                <p class="justify">Through ICR we are trying to solve this problem of data ambiguity and hence reduce the processing time substantially in order to improve the banking experience of the customers. Here we compare the data from the data of different banks database and then we modify and create our own credit score based on our algorithm to provide a standard global credit rating. It is not much different from the current model but the only and the biggest change is that theCredit Rating process will be a centralized process instead of it being the distributed one like the one we have right now.</p>
+                <p class="justify">In our project we have used the CapitalOne API to gather and prepare data for the analysis. Then we have stored the database on the AWS RDB for the implementation of cloud storage. And in the end all the analysis and design isdone using the APIs from Microstratergy. All this being put together form our project that is an intelligent credit record handling tool.</p>
+                <p class="justify">Future aspects of this tool involves increasing the security of the credit cards and sending an alert to the customer well before his/her FICOscore is about to drop so that they have a chance to improve or maintain their credit history by being prompted and guided constantly.</p>
                 <p><a class="btn btn-primary btn-lg">Learn more</a></p>
             </div>
             <div class="student-info row fs-16">
@@ -247,7 +244,7 @@
 
 
     </div>
-    <form id="testForm" action="http://127.0.0.1:8080/sendData" method="post">
+    <!-- <form id="testForm" action="http://127.0.0.1:8080/sendData" method="post">
         <fieldset>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" />
@@ -261,7 +258,7 @@
             <input type="submit" value="Send message" />
 
         </fieldset>
-    </form>
+    </form> -->
 
     <!--  Footer Starts -->
     <div id="footer">
@@ -520,8 +517,8 @@
                   type: 'POST',
                   url: 'http://127.0.0.1:8080/sendData',
                   data: JSON.stringify(info),
-                  contentType: 'application/json',
                   dataType: 'json',
+                  contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 
                   //dataType:       'json',
 
