@@ -501,24 +501,33 @@
                 }, 1000);
             }
 
-            $(".notify-customer").on('click', function () {
+            $(".notify-customer").on('click', function (e) {
+              e.preventDefault();
               console.log("In Post");
               //var request = require('request');
               //console.log(info);
-              var info=[];
+              var info =[];
               var obj = {};
               obj.name = $(".decision-div ").find(".display-name").text();
               obj.contact = $(".cust-contact").text();
               obj.decision = $("#dummyApproval").text();
+              var getTest = $("#dummyApproval").text();
               info.push(obj);
+              var test = {'decision': getTest};
+              //info = $("#dummyApproval").text();
               //$("#testForm").submit();
               $.ajax({
 
                   type: 'POST',
                   url: 'http://127.0.0.1:8080/sendData',
-                  data: JSON.stringify(info),
-                  dataType: 'json',
-                  contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+
+                  dataType: 'text',
+                  data: test,
+                //contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                  // dataType:'json',
+                  // contentType: 'application/json',
+
+                  //data: JSON.stringify(info),
 
                   //dataType:       'json',
 
@@ -528,7 +537,7 @@
                   success: function(data) {
                       console.log('success');
                       console.log("Message Sent"); //async:false
-                      $("#messageSent").modal('show');
+                      //$("#messageSent").modal('show');
                   }
               });
               //

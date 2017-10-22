@@ -1,11 +1,13 @@
 var mysql = require('mysql');
 var getCustomer;
 var getCustomer1 = [{'name':'Ahmed Sayed', 'contact':'17737032688', 'decision':'Rejected'}];
+var getCustomer2 = [{'name':'Zeshan Sayed', 'contact':'16507978341', 'decision':'Approved'}];
 var $;
 var env = require('require-env');
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
+var count=0;
 
 app.use(bodyParser.urlencoded({
     extended: true
@@ -129,6 +131,7 @@ app.post('/getUsers', function(req, res) {
                 res.end();
 
         });
+        //con.end();
     });
     console.log(getCustomer);
     //res.type('json');
@@ -150,8 +153,15 @@ app.post('/sendData', function(req, res) {
     console.log("In Laptop Server");
     var test = req.body;
     console.log(test);
-    console.log(JSON.stringify(test));
-    callback(test);
+    console.log(test.decision );
+    //console.log(JSON.stringify(test));
+    if (test.decision == "Approved") {
+      callback(getCustomer2);
+      //count+=1;
+    } else {
+      callback(getCustomer1);
+    }
+
 
     res.end();
     //next();
