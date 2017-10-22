@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body class="pd-0">
+  <div id="wrap">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#" style="color:#DD1635">XXXXXXXXXXXXXXXXXXXX</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="active" href="#">Ahmed Sayed</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="/qrcode">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="contact">
+        <div class="jumbotron">
+            <h4 style="color:#C00">Message From the XXXXXXXXX</h4>
+            <p class="justify">Welcome to Illinois Institute of Technology's Public Safety Department website. We hope you will find the information contained here to be useful.</p>
+            <p class="justify">Reporting directly to the Vice President for Facilities and Public Safety, the Public Safety Department supports the university's educational goals by maintaining a secure environment in which to explore diverse social, cultural and academic ideas and to pursue knowledge. In addition to discharging its specific duties and responsibilities,the Public Safety Department maintains continuous and harmonious relationships with other law enforcement agencies and community leaders Through a cooperative relationship with local law enforcement, IIT contributes to a community-wide effort to fight criminal activity. The end result is a safe and secure environment in which to live, work and study throughout all IIT campuses.</p>
+                  <p class="justify">Developing a safe and secure environment in an academic institution is a partnership. The Public Safety Department is assigned the primary responsibility of identifying those programs, methods, and tactics necessary; while every member of the community is encouraged to learn and demonstrate personal security habits and to immediately report crimes or suspicious activity.</p>
+            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+        </div>
+        <div class="student-info row">
+          <div class="col-md-12 hawk-list" style="display:none;">
+            <div class="row">
+                <div class="col-md-8">
+                  <p class="lead"><b>Pending Applications(In a Queue)</b></p>
+                </div>
+                <div class="form-group col-md-4">
+                  <!-- <div class="input-group">
+                    <span class="input-group-addon">Number of Students</span>
+                    <input type="text" class="form-control pdR-15">
+                    <span class="input-group-btn">
+                      <button id="notify" class="btn btn-success" type="button">Notify!</button>
+                    </span>
+                  </div> -->
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- <form id="#" action="http://192.168.1.102:8080/connectDatabase" method="post">104.194.113.59 -->
+        <div class="row clear-both test-div">
+          <div class="col-md-12 text-right"><a href="#" id="test" class="btn btn-primary">View Customers</a></div>
+        </div>
+
+
+    </div>
+    <!-- Modal Start-->
+    <div class="modal" id="messageSent">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header pdB-0">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Message</h4>
+          </div>
+          <div class="modal-body pdB-0">
+            <p>Hawks Notified!!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal Ends-->
+
+<form action="http://127.0.0.1:8080/getUsers" method="post">
+  <input type="submit" value="submit"/>
+</form>
+  </div>
+
+  <!--  Footer Starts -->
+    <div id="footer">
+      <div class="container text-center">
+        <p class="text-muted credit mrT-20"><span class="glyphicon glyphicon-copyright-mark"></span> Copyright, 2017 - XXXXX <a target="_blank" href="">(www.XXXXXX.com)</a></p>
+      </div>
+      </div>
+      <!-- Footer Ends -->
+<!-- <div id="mydossier" height="100%" width="100%"></div>
+
+    <script type="text/javascript">
+
+      var myDossier;
+
+      function load() {
+
+        var container = document.getElementById("mydossier"),
+
+          url = "http://localhost:8080/MicroStrategyLibrary/app/0730F68F4B8B4B52AA23F0AAB46F3CA8/80E855BE11E78E1FEDDC0080EF550F02/K1E1B856311E78E216B2B0080EFF54EFE--K1E1B7FE111E78E21396F0080EFF5CDB9";
+
+        microstrategy.dossier.create({
+
+          url: url,
+
+          enableResponsive: true,
+
+          placeholder: container
+
+        })
+
+      };
+
+    </script> -->
+<script type="text/javascript" src="js/jquerysession.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<!-- <script type="text/javascript" src="js/index.js"></script> -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+          //Animate JS
+          //var getId = $.cookie('userID');
+          //var getImage = $.cookie('userImage');
+
+        //  var newURL = 'http://api.reimaginebanking.com/accounts/'+getAccId+'/loans?key=9f3ad3aa21e67406784fb75a07145f36';
+          // $.ajax({
+          //     type: "get", //contentType: 'application/json',
+          //     contentType: 'application/json',
+          //     dataType:'json',
+          //     url: 'http://10.67.253.24/getUsers',
+          //     //async:false,
+          //     success: function(data) {
+          //         console.log('success');
+          //         console.log(data);
+          //         console.log("Message Sent"); //async:false
+          //         //$("#messageSent").modal('show');
+          //     }
+          // });
+          function loadData() {
+            $.ajax({
+                type: "post", //contentType: 'application/json',
+                contentType: 'application/json',
+                dataType:'json',
+                url: "http://127.0.0.1:8080/getUsers",
+                success: function(data) {
+                    console.log('success');
+                    console.log(JSON.stringify(data));
+                    //getData = data;
+                    setTimeout(function() {
+                      //console.log(getData);
+                        //renderTable(getData);
+                    }); //async:false
+                }
+            });
+          }
+
+loadData();
+
+        //},1000);
+          //load();
+
+            }
+
+        );
+      //$(window).load(function() {
+
+        //});
+    </script>
+</body>
+
+</html>

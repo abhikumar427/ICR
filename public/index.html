@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootswatch.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body class="pd-0">
+    <div id="wrap">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <a class="navbar-brand" href="#" style="color:#DD1635">ICR</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="active" href="#">Ahmed Sayed</a></li>
+                        <li><a href="#">|</a></li>
+                        <li><a href="/qrcode">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container" id="contact">
+            <div class="jumbotron">
+                <h4 style="color:#C00">Message From the ICR</h4>
+                <p class="justify">Welcome to Illinois Institute of Technology's Public Safety Department website. We hope you will find the information contained here to be useful.</p>
+                <p class="justify">Reporting directly to the Vice President for Facilities and Public Safety, the Public Safety Department supports the university's educational goals by maintaining a secure environment in which to explore diverse social, cultural and academic
+                    ideas and to pursue knowledge. In addition to discharging its specific duties and responsibilities,the Public Safety Department maintains continuous and harmonious relationships with other law enforcement agencies and community leaders
+                    Through a cooperative relationship with local law enforcement, IIT contributes to a community-wide effort to fight criminal activity. The end result is a safe and secure environment in which to live, work and study throughout all IIT
+                    campuses.</p>
+                <p class="justify">Developing a safe and secure environment in an academic institution is a partnership. The Public Safety Department is assigned the primary responsibility of identifying those programs, methods, and tactics necessary; while every member
+                    of the community is encouraged to learn and demonstrate personal security habits and to immediately report crimes or suspicious activity.</p>
+                <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+            </div>
+            <div class="student-info row fs-16">
+                <div class="col-md-12 hawk-list" style="display:none;">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p class="lead"><b>Pending Applications(In a Queue)</b></p>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <!-- <div class="input-group">
+                    <span class="input-group-addon">Number of Students</span>
+                    <input type="text" class="form-control pdR-15">
+                    <span class="input-group-btn">
+                      <button id="notify" class="btn btn-success" type="button">Notify!</button>
+                    </span>
+                  </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="userInfo" class="row border-bottom " style="display:none;">
+                <div class="col-xs-3">
+                    <img src="" class="img-responsive user-img" />
+                </div>
+                <div class="col-xs-9">
+                    <div class="form-group">
+                        <label for="" class="col-lg-4 control-label">Customer ID</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-id border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-lg-4 control-label">Customer Name</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-name border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="col-lg-4 control-label">Contact</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-contact border-none" id=""></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 mrT-10 border-bottom">
+                    <div class="form-group col-xs-6">
+                        <label for="" class="col-lg-4 control-label">Loan Type</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-loanType border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Loan Status</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-loanStatus border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Premium</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-premium border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Loan Amount</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-loanAmt border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Loan Description</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-desciption border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Application Date</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-desciption border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">A/C No</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-accNo border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Credit Score</label>
+                        <div class="col-lg-8">
+                            <p class="form-control creditScore border-none" id=""></p>
+                        </div>
+                    </div>
+                    <div class="form-group col-xs-6 ">
+                        <label for="" class="col-lg-4 control-label">Monthly Salary</label>
+                        <div class="col-lg-8">
+                            <p class="form-control cust-salary border-none" id=""></p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 text-center border-bottom ">
+                    <p class="fs-16">Visualization Data</p>
+                    <iframe class="visual-data" width="100%" height="480" src=""></iframe>
+                </div>
+                <div class="col-xs-12 text-right fs-16 mrT-20 mrB-20">
+                  <p><i>Note: click on the below button to run the algorithm, and suggest some action for the current user </i><b class="display-name">Test</b></p>
+                    <!-- <table>
+
+                                    <tr>
+                                        <td>Monthly payment:</td>
+                                        <td>$<span class="output" id="payment"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total payment:</td>
+                                        <td>$<span class="output" id="total"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total interest:</td>
+                                        <td>$<span class="output" id="totalinterest"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Eligibility:</td>
+                                        <td>$<span class="output" id="eligibility"></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Approval:</td>
+                                        <td> <span class="output" id="approval"></span></td>
+                                    </tr>
+                    </table> -->
+                    <a href="#" class="btn btn-success text-right icr-btn" >ICR Suggestion</a>
+
+                </div>
+            </div>
+            <!-- <form id="#" action="http://192.168.1.102:8080/connectDatabase" method="post">104.194.113.59 -->
+            <div class="row clear-both test-div">
+                <div class="col-md-12 text-right"><a href="#" id="test" class="btn btn-primary">View Customers</a></div>
+            </div>
+
+            <div class="col-xs-12 decision-div " style="display:none;">
+              <h4>ICR Decision</h4>
+              <p class="" >Salary: <b id="dummySalary"> </b><p/>
+                <p class="">Total Pay: <b id="dummytot-pay" ></b><p/>
+                <p class="" >Interest: <b id="dummytot-int"></b><p/>
+
+                    <p class="" >Current Credit Score: <b id="dummyCredit"></b><p/>
+                  <p class="">Decision: <b  id="dummyApproval" class="fs-16"></b><p/>
+                  <div class="col-xs-12 ">
+                    <div class="row col-xs-12 text-right">
+                      <a href="#" class="btn btn-warning notify-customer">Notify Customer</a>
+                      <a href="#" class="btn btn-default ">Mark as Pending</a>
+                    </div>
+
+                    <p><i>Note: click on the below button to inform Customer </i><b class="display-name">Test</b> about the Decision.</p>
+                  </div>
+            </div>
+        </div>
+        <!-- Modal Start-->
+        <div class="modal" id="icrModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header pdB-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Intellectual Credit Repository</h4>
+                    </div>
+                    <div class="modal-body pdB-0">
+                        <p class="cust-modal-name"></p>
+                        <table class="table">
+                          <tr>
+                            <td>Monthly Salary:</td>
+                            <td><p class="month-salary"></p></td>
+                          </tr>
+                          <tr>
+                            <td>Total payment:</td>
+                            <td><p class="tot-pay"></p></td>
+                          </tr>
+                          <tr>
+                            <td>Total interest:</td>
+                            <td><p class="tot-int"></p></td>
+                          </tr>
+                          <tr>
+                            <td>Credit Score:</td>
+                            <td><p class="mod-cred"></p></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" class=" fs-16"><p class="decision"></p></td>
+                          </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#" class="btn btn-success">Approve</a>
+                        <a href="#" class="btn btn-danger mrL-10">Reject</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Ends-->
+
+
+    </div>
+    <form id="testForm" action="http://127.0.0.1:8080/sendData" method="post">
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email address" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="What's on your mind?"></textarea>
+
+            <input type="submit" value="Send message" />
+
+        </fieldset>
+    </form>
+
+    <!--  Footer Starts -->
+    <div id="footer">
+        <div class="container text-center">
+            <p class="text-muted credit mrT-20"><span class="glyphicon glyphicon-copyright-mark"></span> Copyright, 2017 - ICR <a target="_blank" href="">(www.ICR.com)</a></p>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+    <script type="text/javascript" src="js/jquerysession.js"></script>
+
+    <script>
+
+    </script>
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          var getID;
+          var amount, sal, apr = 5,
+              years = 2,
+              payment, total, totalinterest, eligibility, approval, montheligibility, creditScore, approval,principal;
+              var interest, payments, test, eligib, x, monthly;
+              $(".icr-btn").on('click', function (e) {
+                e.preventDefault();
+                //$().find(".month-salary").text()
+                // $("#icrModal").modal('show');
+                // $(".icr-btn").find(".month-salary").html($("#dummySalary").html());
+                // $(".icr-btn").find(".tot-pay").html($("#dummytot-pay").html());
+                // $(".icr-btn").find(".tot-int").html($("#dummytot-int").html());
+                // $(".icr-btn").find(".decision").html($("#dummyApproval").html());
+                // $(".icr-btn").find(".mod-cred").html($("#dummyCredit").html());
+                $(".decision-div").slideDown();
+                setTimeout(function() {
+                    $('html, body').animate({
+                        scrollTop: $(".decision-div").offset().top
+                    }, 1000);
+                }, 1000);
+
+              });
+          function calculate() {
+              //Look up the input and output elements in the documen
+
+              principal = parseFloat(amount);
+              interest = parseFloat(apr) / 100 / 12;
+              payments = parseFloat(years) * 12;
+              test = (principal / 12) + (interest * principal) / 100;
+              eligib = parseFloat(sal - test);
+
+
+              // compute the monthly payment figure
+              x = Math.pow(1 + interest, payments); //Math.pow computes powers
+              monthly = (principal * x * interest) / (x - 1);
+              //$(".icr-btn").find(".month-salary").html(monthly);
+              $("#dummySalary").text(monthly);
+
+
+
+              if (monthly) {
+                  // Fill in the output fields, rounding to 2 decimal places
+                  payment = monthly.toFixed(2);
+                  total = (monthly * payments).toFixed(2);
+                  //$(".icr-btn").find(".tot-pay").html(total);
+                  $("#dummytot-pay").text(total);
+                  totalinterest = ((monthly * payments) - principal).toFixed(2);
+                  //$(".icr-btn").find(".tot-int").html(totalinterest);
+                  $("#dummytot-int").text(totalinterest);
+
+                  eligibility = (eligib).toFixed(2);
+
+               }
+              // else {
+              //
+              //     payment.innerHTML = ""; // Erase the content of these elements
+              //     total.innerHTML = ""
+              //     totalinterest.innerHTML = "";
+              //     eligibility.innerHTML = "";
+              //
+              // }
+
+              var salary = parseFloat(sal)*12;
+              var deduction = payments + principal;
+
+              if (salary >= deduction && creditScore >600) {
+                  approval="Approved";
+                  $("#dummyApproval").addClass("green").removeClass("red");
+                  //$(".icr-btn").find(".decision").html(approval);
+
+              } else {
+                  approval="Rejected";
+                  $("#dummyApproval").addClass("red").removeClass("green");
+                  //$(".icr-btn").find(".decision").html(approval);
+              }
+              $("#dummyApproval").text(approval);
+          }
+            //Animate JS
+            //load();
+            $.fn.extend({
+                animateCss: function(animationName) {
+                    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+                    });
+                    return this;
+                }
+            });
+            var getData = []; //Get Data from AWS and store it in getData
+            // $.ajax({
+            //     type: "post", //contentType: 'application/json',
+            //     url: "http://192.168.1.102:8080/connectDatabase",
+            //     success: function(data) {
+            //         console.log('success');
+            //     }
+            // });
+
+            $("#test").on('click', function() {
+                $(".test-div").hide();
+                $.ajax({
+                    type: "get", //contentType: 'application/json',
+                    url: "http://api.reimaginebanking.com/customers?key=9f3ad3aa21e67406784fb75a07145f36",
+                    success: function(data) {
+                        console.log('success');
+                        console.log(JSON.stringify(data));
+                        getData = data;
+                        setTimeout(function() {
+                            console.log(getData);
+                            renderTable(getData);
+                        }); //async:false
+                    }
+                });
+            });
+            $(".student-info").on('click', '.notify', function() {
+                 getID = $(this).parent().find(".id").text();
+                var getImage = $(this).parent().find(".image-path").attr('src');
+                $(".user-img").attr('src', getImage);
+                $(".jumbotron").slideUp();
+                // var test = 'http://api.reimaginebanking.com/customers/'+getID+'/accounts?key=9f3ad3aa21e67406784fb75a07145f36';
+                var getAccId;
+                $.ajax({
+
+
+
+                    type: "post", //contentType: 'application/json',
+                    //contentType: 'application/json',
+                    //contentType: "application/json; charset=utf-8",
+                    //dataType: 'json',
+                    url: "http://127.0.0.1:8080/getUsers",
+                    success: function(data) {
+                        console.log('success');
+                        console.log(JSON.stringify(data));
+                        getData = data;
+                        setTimeout(function() {
+                            renderCustomerInfo(getData);
+                        }); //async:false
+                    },
+                    error: function(xhr, ajaxOptions, thrownError) {}
+
+                });
+
+            });
+
+
+            function renderTable(data) {
+
+                for (var i = 0; i < data.length; i++) {
+                    //var row = '<tr>' + '<td>' + data[i].name + '</td>' + '<td>' + data[i].contact + '</td>' + '</tr>'
+
+                    var count = i + 1;
+                    var student = '<div class="col-md-3 mrB-15">' +
+                        '<div class="col-md-12  pd-0">' +
+                        '<img src="images/' + count + '.jpg" class="image-path" style="width: 200px;">' +
+                        '</div>' +
+                        '<p style="margin: 0;">Id : <b class="id">' + data[i]._id + '</b></p>' +
+                        '<p style="margin: 0;">First Name : <b>' + data[i].first_name + '</b></p>' +
+                        '<p style="margin: 0;">Last Name: <b>' + data[i].last_name + '</b></p>' +
+                        '<p style="margin: 0;">City: <b>' + data[i].address.city + '</b></p>' +
+                        '<p style="margin: 0;">State: <b>' + data[i].address.state + '</b></p>' +
+                        '<p style="margin: 0;">Zip: <b>' + data[i].address.zip + '</b></p>' +
+                        '<a href="#" class="btn btn-success notify">View Application</a>' +
+                        '</div>';
+
+                    $(".student-info").append(student);
+                }
+                $(".hawk-list").fadeIn();
+
+                $(".student-info").animateCss('slideInDown');
+                setTimeout(function() {
+                    $('html, body').animate({
+                        scrollTop: $(".student-info").offset().top
+                    }, 1000);
+                }, 1000);
+
+            }
+
+            var renderCustomerInfo = function(getCustomer) {
+                console.log("In render customer");
+                var tableID = $("#userInfo");
+                for (var i = 0; i < getCustomer.length; i++) {
+                    if (getCustomer[i].loanStatus == "pending" && getID == getCustomer[i].customerID) {
+                        console.log(getCustomer[i].customerID);
+                        console.log($("#userInfo").find(".cust-id"));
+
+                        $("#userInfo").find(".cust-id").text(getCustomer[i].customerID);
+                        $("#userInfo").find(".cust-name").text(getCustomer[i].customerName);
+                        $("#userInfo").find(".cust-contact").text(getCustomer[i].customerContact);
+                        $("#userInfo").find(".cust-loanType").text(getCustomer[i].loanType);
+                        $("#userInfo").find(".cust-loanStatus").text(getCustomer[i].loanStatus);
+                        $("#userInfo").find(".cust-premium").text(getCustomer[i].premium);
+                        $("#userInfo").find(".cust-loanAmt").text(getCustomer[i].loanAmt);
+                        $("#userInfo").find(".cust-desciption").text(getCustomer[i].desciption);
+                        $("#userInfo").find(".cust-date").text(getCustomer[i].creationDate);
+                        $("#userInfo").find(".cust-accNo").text(getCustomer[i].accountNumber);
+                        $("#userInfo").find(".visual-data").attr('src', getCustomer[i].url);
+                        $("#userInfo").find(".cust-salary").text(getCustomer[i].salary);
+                        $("#userInfo").find(".creditScore").text(getCustomer[i].creditScore);
+
+
+                        $(".display-name").text(getCustomer[i].customerName);
+
+                        //$(".icr-btn").find(".mod-cred").html(getCustomer[i].creditScore);
+                        $("#dummyCredit").text(getCustomer[i].creditScore);
+
+                        amount = getCustomer[i].loanAmt;
+                        sal = getCustomer[i].salary;
+                        console.log(sal);
+                        creditScore = getCustomer[i].creditScore;
+                        calculate();
+
+                    }
+
+                    //console.log(row);
+                }
+                $(".student-info").hide();
+                $("#userInfo").show();
+                setTimeout(function() {
+                    $('html, body').animate({
+                        scrollTop: $("#userInfo").offset().top - 100
+                    }, 1000);
+                }, 1000);
+            }
+
+            $(".notify-customer").on('click', function () {
+              console.log("In Post");
+              //var request = require('request');
+              //console.log(info);
+              var info=[];
+              var obj = {};
+              obj.name = $(".decision-div ").find(".display-name").text();
+              obj.contact = $(".cust-contact").text();
+              obj.decision = $("#dummyApproval").text();
+              info.push(obj);
+              //$("#testForm").submit();
+              $.ajax({
+
+                  type: 'POST',
+                  url: 'http://127.0.0.1:8080/sendData',
+                  data: JSON.stringify(info),
+                  contentType: 'application/json',
+                  dataType: 'json',
+
+                  //dataType:       'json',
+
+                  /* Very important */
+                  //contentType:    'application/json',
+                  //data: JSON.stringify(info),
+                  success: function(data) {
+                      console.log('success');
+                      console.log("Message Sent"); //async:false
+                      $("#messageSent").modal('show');
+                  }
+              });
+              //
+              // function postSuccessHandler(jsonData) {
+              //     console.log("Success");
+              // };
+            });
+
+        });
+    </script>
+</body>
+
+</html>

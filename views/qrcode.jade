@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1= title
+
+    #out-container
+        h2 Welcome!
+        img#user-photo(src="/images/default_badge.jpg")
+        p#user-name John Doe
+        p#user-title Employee
+
+    #in-container
+        p Scan the QR Code with your Usher badge to log in.
+        #qr-container
+            img#qr-image(src="/images/loading_qrcode2.gif", style='height:250px; width:250px;')
+
+    a(href="/") <h4>Home page</h4>
+
+    script(src="/javascripts/qrlogin.js")
+    script(src="/js/commonscript.js")
+    script.
+      var uN = $("#user-name").text();
